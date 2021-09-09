@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Calculator</title>
+    <!------Font------>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <!------CSS------->
+    <link rel="stylesheet" href="css/style.css">
+    <!------JS-------->
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>Calcule seu IMC</h1>
+            <div class="main">
+               <img src="img/img3.gif">
+                <div>
+                    <form onsubmit="return calculateImc(this)">
+                        <!--Height-->
+                        <label for="height">Altura </label>
+                        <input name="height" id="height" placeholder="ex: 1.80"> 
+                        <!--Weight-->
+                        <label for="weight">Peso </label>
+                        <input name="weight" id="weight" placeholder="ex: 74.8">
+                        <!--Submit-->
+                        <button class="submit" type="submit">Calcular</button>
+                    </form>
+                </div>
+            </div>
+            <div class="result">
+                
+            </div>              
+           
+        </section>
+    </div>
+</body>
+</html>
