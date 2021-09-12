@@ -17,9 +17,12 @@
         <section>
             <h1>Calcule seu IMC</h1>
             <div class="main">
-               <img src="img/img3.gif">
-                <div>
-                    <form onsubmit="return calculateImc(this)">
+               <img id="img" src="img/img3.gif">
+                <section>
+                    <form onsubmit="return calculateBMI(this)">
+                        <!---Age---->
+                        <label for="age">Idade</label>
+                        <input type="text" name="age" id="age" placeholder="ex: 34">
                         <!--Height-->
                         <label for="height">Altura </label>
                         <input name="height" id="height" placeholder="ex: 1.80"> 
@@ -27,11 +30,11 @@
                         <label for="weight">Peso </label>
                         <input name="weight" id="weight" placeholder="ex: 74.8">
                         <!--Submit-->
-                        <button class="submit" type="submit">Calcular</button>
+                        <button class="submit"  type="submit">Calcular</button>
                     </form>
-                </div>
+                </section>
             </div>
-            <div class="result">
+            <div id="result">
                 
             </div>              
            
