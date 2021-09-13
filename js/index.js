@@ -44,6 +44,7 @@ function calculateBMI(form) {
 
     function imgObesity() {
         document.getElementById("img").src="img/imgObesity.gif"
+        
     }
 
     

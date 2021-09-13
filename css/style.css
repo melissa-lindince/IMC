@@ -1,6 +1,6 @@
 :root {
     --colorGeneral: #ffa796;
-    --colorText: white;
+    --colorText: rgb(61, 24, 30);
     --colorBody: #ffddd9;
 }
 
@@ -13,12 +13,12 @@
   color: rgb(61, 24, 30);
 }
 
-h1, h2 {
-  color: rgb(61, 24, 30);
-}
-
 body{
   background-color: var(--colorBody);
+}
+
+h1, h2 {
+  color: rgb(61, 24, 30);
 }
 
 .container {
@@ -32,6 +32,13 @@ body{
     text-align: center; 
 }
 
+.content {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 99%;
+}
+
 .main {
   display: flex;
 }
@@ -39,41 +46,48 @@ body{
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 60px;
+    align-items:center;
+    justify-content: center;
+    height: 11.5rem; 
+    margin-top: 10px;  
     
 }
 
-label {
-    
-    margin-top: 5px;
-}
+
 
 input {
     border: 5px solid var(--colorGeneral);
     border-radius: 5px;
-    height: 60px;
+    height: 50px;
+    width: 242px;
+
+    margin-bottom: 10px;
 }
 
 .submit {
-    color: #fff;
-    background: transparent;
+    color:var(--colorGeneral);
+    background: var(--colorText);
     cursor: pointer;
-    padding: 6.5px;
-    margin-top: 10px;
+    border-radius: 5px;
     border:none;
+    height: 50px;
+    width: 242px;
 }
 
 .submit:hover {
-    background-color: var(--colorGeneral);
-    color:var(--colorText);
+    background-color: var(--colorText);
+    opacity: 0.9;
+    color:var(--colorGeneral);
     border-radius: 5px;
     transition: 0.6s ease;
 }
 
-#result {
+#img {
+  height: 11.5rem;
+}
+
+.result {
   margin-top: 2rem;
-  border: 5px solid var(--colorGeneral);
  
 }
   

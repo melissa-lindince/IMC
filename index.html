@@ -14,31 +14,35 @@
 </head>
 <body>
     <div class="container">
-        <section>
-            <h1>Calcule seu IMC</h1>
-            <div class="main">
-               <img id="img" src="img/img3.gif">
-                <section>
-                    <form onsubmit="return calculateBMI(this)">
-                        <!---Age---->
-                        <label for="age">Idade</label>
-                        <input type="text" name="age" id="age" placeholder="ex: 34">
-                        <!--Height-->
-                        <label for="height">Altura </label>
-                        <input name="height" id="height" placeholder="ex: 1.80"> 
-                        <!--Weight-->
-                        <label for="weight">Peso </label>
-                        <input name="weight" id="weight" placeholder="ex: 74.8">
-                        <!--Submit-->
-                        <button class="submit"  type="submit">Calcular</button>
-                    </form>
-                </section>
-            </div>
-            <div id="result">
-                
-            </div>              
-           
-        </section>
+        <h1>Calcule seu IMC</h1>
+        <div class="content">
+            <section>
+                <img id="img" src="img/img3.gif">
+            </section>
+            <section>
+                <div class="main">
+                   
+                    <section>
+                        <form onsubmit="return calculateBMI(this)">
+                            <!---Age---->
+                            <label for="age">Idade</label>
+                            <input type="text" name="age" id="age" placeholder="ex: 34">
+                            <!--Height-->
+                            <label for="height">Altura </label>
+                            <input name="height" id="height" placeholder="ex: 1.80"> 
+                            <!--Weight-->
+                            <label for="weight">Peso </label>
+                            <input name="weight" id="weight" placeholder="ex: 74.8">
+                            <!--Submit-->
+                            <button class="submit"  type="submit">Calcular</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </div>    
+        <div id="result" class="result">
+
+        </div> 
     </div>
 </body>
 </html>
