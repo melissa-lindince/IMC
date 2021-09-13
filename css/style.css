@@ -1,98 +1,83 @@
 :root {
     --colorGeneral: #ffa796;
-    --colorText: rgb(61, 24, 30);
+    --brownColor: rgb(61, 24, 30);
     --colorBody: #ffddd9;
 }
 
 * {
-  font-family: 'Amatic SC', cursive;
-  font-size: 30px;
   padding: 0;
   margin: 0;
+  color: var(--brownColor);
   box-sizing: border-box;
-  color: rgb(61, 24, 30);
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
 }
 
 body{
-  background-color: var(--colorBody);
+  background-color: var(--brownColor);
 }
 
 h1, h2 {
-  color: rgb(61, 24, 30);
+  background-color: var(--brownColor);
+  color: var(--colorGeneral);
+  width: 90%;
+  border-radius: 0px 0px 5px 5px;
 }
 
-.container {
-    background-color: rgb(252, 246, 246) ;
-    max-width: 20rem;
-    height: 700px;
+.general {
+    background-color: rgb(246, 246, 246) ;
+    max-width: 21rem;
+    height: 600px;
     margin: auto;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center; 
 }
 
-.content {
+.container {
+  width: 99%;
   display: flex;
   justify-content: space-between;
-  
-  width: 99%;
 }
 
-.main {
+.form {
+  height: 11.5rem; 
+  margin-top: 10px;  
   display: flex;
+  flex-direction: column;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    height: 11.5rem; 
-    margin-top: 10px;  
-    
-}
-
-
 
 input {
-    border: 5px solid var(--colorGeneral);
-    border-radius: 5px;
-    height: 50px;
-    width: 242px;
-
-    margin-bottom: 10px;
+  height: 50px;
+  width: 240px;
+  margin-bottom: 10px;
+  border: 5px solid var(--colorGeneral);
+  border-radius: 5px;
 }
 
 .submit {
-    color:var(--colorGeneral);
-    background: var(--colorText);
-    cursor: pointer;
-    border-radius: 5px;
-    border:none;
-    height: 50px;
-    width: 242px;
+  background: var(--colorGeneral);
+  color:var(--brownColor);
+  height: 50px;
+  width: 240px;
+  border-radius: 5px;
+  border:none;
+  cursor: pointer;
 }
 
 .submit:hover {
-    background-color: var(--colorText);
-    opacity: 0.9;
-    color:var(--colorGeneral);
-    border-radius: 5px;
-    transition: 0.6s ease;
+  background-color: var(--brownColor);
+  color:var(--colorGeneral);
+  transition: 0.5s ;
 }
 
 #img {
   height: 11.5rem;
 }
-
-.result{
-  margin-top: 2rem;
-  
-}
   
 #result {
-  font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 2rem;
+  font-size: 45px;
 }
-  
-  

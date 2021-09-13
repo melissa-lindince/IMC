@@ -13,17 +13,18 @@
     <script defer src="js/index.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="general">
         <h1>Calcule seu IMC</h1>
-        <div class="content">
+        <div class="container">
+            <!--Image Default-->
             <section>
-                <img id="img" src="img/img3.gif">
+                <img id="img" src="img/imgDefault.gif">
             </section>
+            <!--Form-->
             <section>
-                <div class="main">
-                   
+                <div>
                     <section>
-                        <form onsubmit="return calculateBMI(this)">
+                        <form class="form" onsubmit="return calculateBMI(this)">
                             <!---Age---->
                             <label for="age">Idade</label>
                             <input type="text" name="age" id="age" placeholder="ex: 34">
@@ -40,14 +41,8 @@
                 </div>
             </section>
         </div>  
-        <div class="result">
-            <p>Resultado: </p>
-            <div id="result">
-            
-            </div> 
-
-        </div>  
-        
+        <!--Result-->
+        <div id="result"></div> 
     </div>
 </body>
 </html>
