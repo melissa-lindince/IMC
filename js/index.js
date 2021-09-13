@@ -20,7 +20,7 @@ function calculateBMI(form) {
             
         }  
 
-        result.innerHTML = `Resultado: ${parseFloat(imc).toFixed(2)}  ${imcText}`;  
+        result.innerHTML = ` ${parseFloat(imc).toFixed(2)} - ${imcText}`;  
     }
 
     function peopleUnder60() {
@@ -29,7 +29,7 @@ function calculateBMI(form) {
             imcText = 'Muito abaixo do peso'
             imgUnderWeight()
         } else if (imc > 17 && imc <= 18.4 && lessThan60) {
-            imcText = 'Abaixo do peso'
+            imcText = 'Abaixo do peso '
             imgUnderWeight()
         } else if (imc >= 18.5 && imc <= 24.9 && lessThan60) {
             imcText = 'Peso adequado'
@@ -37,7 +37,7 @@ function calculateBMI(form) {
             imcText = 'Acima do peso'
         }  
         
-        result.innerHTML = `Resultado: ${parseFloat(imc).toFixed(2)}  ${imcText}`; 
+        result.innerHTML =  `${parseFloat(imc).toFixed(2)} - ${imcText}` 
     }
 
     function obesity() {
@@ -52,7 +52,7 @@ function calculateBMI(form) {
             imgObesity()
         } 
 
-        result.innerHTML = `Resultado: ${parseFloat(imc).toFixed(2)}  ${imcText}`;
+        result.innerHTML = ` ${parseFloat(imc).toFixed(2)} - ${imcText}`;
     }
 
     function imgObesity() {

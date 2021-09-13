@@ -86,10 +86,13 @@ input {
   height: 11.5rem;
 }
 
-.result {
+.result{
   margin-top: 2rem;
- 
+  
 }
   
+#result {
+  font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
   
   
